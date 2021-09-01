@@ -14,20 +14,24 @@ function getRandomNumber(max) {
 //counter
 let counter = 0;
 function writeTextCounter() {
-  textCounter.innerHTML = `número de intentos` + (counter += 1);
+  textCounter.innerHTML = `Número de intentos:` + (counter += 1);
 }
 //attempts
 function writeNumber() {
+  let writeHint = '';
   const number = parseInt(inputNumber.value);
   if (number <= 1 || number >= 100) {
-    console.log('El número debe estar entre 1 y 100');
+    writeHint = 'El número debe estar entre 1 y 100';
   } else if (number === randomNumber) {
-    console.log('¡¡¡Has ganado campeona!!!');
+    writeHint = '¡¡¡Has ganado campeona!!!';
   } else if (number > randomNumber) {
-    console.log('Demasiado alto');
+    writeHint = 'Demasiado alto';
   } else if (number < randomNumber) {
-    console.log('Demasiado bajo');
+    writeHint = 'Demasiado bajo';
+  } else if (number !== number) {
+    writeHint = 'Tienes que introducir un número';
   }
+  textHint.innerHTML = writeHint;
 }
 
 //function to handle listener
