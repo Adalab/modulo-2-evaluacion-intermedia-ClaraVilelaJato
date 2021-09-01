@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
     <main class="container">
-      <h1>Adivina el número</h1>
+      <h1 class="main-title">Adivina el número</h1>
       <form class="form">
-        <label>Introduce aquí tu número</label>
+        <label class="title-form">Introduce aquí tu número</label>
         <input
           type="text"
-          class="js-input"
-          placeholder="Escribe número del 1 al 100"
+          class="js-input box-input"
+          placeholder="Escribe un número del 1 al 100"
         />
-        <button class="js-btn">Prueba</button>
-        <p class="js-hint">Pista: Escribe el número y dale a prueba</p>
-        <p class="js-counter">Número de intentos:0</p>
+        <button class="js-btn css-btn">Prueba</button>
+        <p class="js-hint css-hint">Pista: Escribe el número y dale a prueba</p>
+        <p class="js-counter atempts">Número de intentos:0</p>
       </form>
     </main>
     <script src="./js/main.js"></script>

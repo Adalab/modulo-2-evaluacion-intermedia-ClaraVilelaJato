@@ -1,6 +1,8 @@
 * {
   padding: 0px;
   margin: 0px;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: rgb(219, 231, 231);
 }
 .container {
   display: flex;
@@ -13,4 +15,42 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: black solid 1px;
+  padding: 20px 40px;
+}
+.main-title {
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: 800;
+  text-shadow: slategrey 2px 2px 2px;
+}
+.title-form {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.box-input {
+  margin-bottom: 15px;
+  height: 30px;
+  width: 200px;
+  box-shadow: inset 0px 0px 1px;
+}
+.css-btn {
+  background-color: rgba(223, 22, 22, 0.932);
+  width: 80px;
+  border: none;
+  box-shadow: dimgray 1px 2px 8px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 8px;
+  color: white;
+  font-weight: bold;
+}
+.atempts {
+  background-color: tomato;
+  padding: 10px;
+  border: solid 1px gray;
+}
+.css-hint {
+  margin-bottom: 15px;
 }
