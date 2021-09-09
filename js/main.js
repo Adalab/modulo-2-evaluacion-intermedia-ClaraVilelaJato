@@ -20,7 +20,7 @@ function writeTextCounter() {
 function writeNumber() {
   let writeHint = '';
   const number = parseInt(inputNumber.value);
-  if (number <= 1 || number >= 100) {
+  if (number <= 1 || number > 100) {
     writeHint = 'El número debe estar entre 1 y 100';
   } else if (number === randomNumber) {
     writeHint = '¡¡¡Has ganado campeona!!!';
